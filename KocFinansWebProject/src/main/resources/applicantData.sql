@@ -1,0 +1,1 @@
+insert into applicant_model values (2423,'Ahmet',1200,2323);
