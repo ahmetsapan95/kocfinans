@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "454fa32b-f8af-4ce1-82c7-dc3f51443b31",
+		"name": "KocFinansKrediSorgu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/xml, text/xml, application/json, application/*+xml, application/*+json"
+					},
+					{
+						"key": "connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "content-length",
+						"value": "5000"
+					},
+					{
+						"key": "content-type",
+						"value": "application/xml"
+					},
+					{
+						"key": "host",
+						"value": "192.168.5.45:5555"
+					},
+					{
+						"key": "user-agent",
+						"value": "Java/1.8.0_201"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<CC5Request>\r\n    <nationalId>2423</nationalId>\r\n</CC5Request>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
