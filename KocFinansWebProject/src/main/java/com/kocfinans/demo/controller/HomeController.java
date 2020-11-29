@@ -70,7 +70,7 @@ public class HomeController {
 		    applicationResultDataModel.setResultMessage(processCreditResultService.setResultMessage(new BigInteger(applicationResultDataModel.getLimit())));
 		   
 		    applicantRepository.save(applicantModel);
-		    
+		    //SMS service start HERE
 		    if(applicationResultDataModel.getResultMessage().equals(Constants.APPROVED))
 		    {
 		    	model.addAttribute("ResultMessage", Constants.APPROVED);
@@ -79,6 +79,7 @@ public class HomeController {
 		     	model.addAttribute("ResultMessage", Constants.REJECTED);
 		    	smsService.sendSms(Constants.RESULT_MESSAGE_REJECTED, applicantModel.getPhoneNumber());
 		    }
+		    //SMS service ends HERE
 		    model.addAttribute(applicationResultDataModel);
 		    return "applicationResult" ;
 	}
