@@ -2,7 +2,7 @@
 
 Web Projesi Kurulumu
 
-1-	Projeyi hazırlamak için Spring Tool Suit kullandım. https://spring.io/tools linkten indirmenizi tavsiye ederim. Projeyi import etiktiten sonra maven-clean/install + update porject yapıp sağ tıklayarak “Start as Spring Project” seçmeniz sunucunun çalışır hale gelmesi için yeterli olacaktır. Projeyi STS kullanarak oluşturduğumdan içerisinde gömülü bir Tomcat bulunmaktadır. Bu nedenle fazladan sunucu için ayar yapmanıza gerek yoktur. 
+1-	Projeyi hazırlamak için Spring Tool Suit kullandım. https://spring.io/tools linkten indirmenizi tavsiye ederim. Projeyi import ettikten sonra maven-clean/install + update porject yapıp sağ tıklayarak “Start as Spring Project” seçmeniz sunucunun çalışır hale gelmesi için yeterli olacaktır. Projeyi STS kullanarak oluşturduğumdan içerisinde gömülü bir Tomcat bulunmaktadır. Bu nedenle fazladan sunucu için ayar yapmanıza gerek yoktur. 
 
 
 2-	Database olarak h2 database kullandım. Herhangi bir database kurulumu yapmanıza gerek yoktur. Database Server’a giriş yapmak için sunucuyu çalıştırdıktan sonra http://localhost:8080/h2-console adresine giderek password kısmına “password” yazarak giriş yapabilirsiniz.
